@@ -1,0 +1,13 @@
+
+$parrot-containter-size: 100px;
+$parrot-containter-margin: 30px;
+
+.parrot-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    height: $parrot-containter-size;
+    width: $parrot-containter-size;
+    margin: $parrot-containter-margin;
+}

@@ -1,1 +1,5 @@
-var $ = require('jquery');
+'use strict';
+
+let $ = require('jquery');
+
+import Parrot from './parrot';
