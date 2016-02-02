@@ -1,6 +1,14 @@
+@import './mixin.scss';
 
-$parrot-containter-size: 100px;
+
+$parrot-containter-size: 150px;
 $parrot-containter-margin: 30px;
+
+$parrot-cage-size: 120px;
+$parrot-cage-bg: #ddd;
+
+$opera-btn-size: 40px;
+$opera-btn-bg: #ddd;
 
 .parrot-container {
     position: absolute;
@@ -11,3 +19,32 @@ $parrot-containter-margin: 30px;
     width: $parrot-containter-size;
     margin: $parrot-containter-margin;
 }
+
+.parrot-cage {
+    @include circle;
+    @include transform-center;
+    
+    position: absolute;
+    width: $parrot-cage-size;
+    height: $parrot-cage-size;
+    background: {
+        color: $parrot-cage-bg;
+    }
+}
+
+.p-opera-btn {
+    @include circle;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: {
+        color: $opera-btn-bg;
+    }
+    width: $opera-btn-size;
+    height: $opera-btn-size;
+    cursor: pointer;
+    font-size: 80%;
+    text-align: center;
+}
+
+
